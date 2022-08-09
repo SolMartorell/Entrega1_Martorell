@@ -1,0 +1,16 @@
+{% extends 'gym/base.html' %}
+
+{% block contenido %}
+
+<h1>Socios</h1>
+<p>Listado de socios inscriptos:</p>
+
+{% for socio in socios %}
+
+    <p><strong>{{socio.apellido}}</strong>, {{socio.nombre}} - Pago:{{socio.cuota_paga}}</p>
+
+
+{% endfor %}
+
+
+{% endblock %}
