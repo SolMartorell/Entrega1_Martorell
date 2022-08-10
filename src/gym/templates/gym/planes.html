@@ -4,7 +4,13 @@
 
 <h1>Planes</h1>
 <p>Listado de planes disponibles:</p>
-
+<br>
+<form>
+    {{formulario.as_p}}
+    <input type="submit" value="Buscar">
+</form>
+<br>
+<br>
 {% for plan in planes %}
 
     <p><strong>{{plan.nombre}}</strong> - {{plan.cantidad_clases}} clases - ${{plan.precio}} </p>

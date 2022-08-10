@@ -4,7 +4,13 @@
 
 <h1>Socios</h1>
 <p>Listado de socios inscriptos:</p>
-
+<br>
+<form>
+    {{formulario.as_p}}
+    <input type="submit" value="Buscar">
+</form>
+<br>
+<br>
 {% for socio in socios %}
 
     <p><strong>{{socio.apellido}}</strong>, {{socio.nombre}} - Pago:{{socio.cuota_paga}}</p>
