@@ -1,8 +1,11 @@
 {% extends 'gym/base.html' %}
 
+{% block titulo %} Planes {% endblock %}
+
+{% block welcome %} Planes {% endblock %}
+
 {% block contenido %}
 
-<h1>Planes</h1>
 <p>Listado de planes disponibles:</p>
 <br>
 <form>
@@ -15,8 +18,6 @@
 
     <p><strong>{{plan.nombre}}</strong> - {{plan.cantidad_clases}} clases - ${{plan.precio}} </p>
 
-
 {% endfor %}
-
 
 {% endblock %}

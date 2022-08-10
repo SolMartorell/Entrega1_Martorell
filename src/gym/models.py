@@ -21,7 +21,7 @@ class Socios(models.Model):
 class Planes(models.Model):
     nombre = models.CharField(max_length=30)
     cantidad_clases = models.IntegerField(default=30)
-    precio = models.IntegerField(blank=True)
+    precio = models.IntegerField()
 
     def __str__(self):
         return f"'Nombre:'{self.nombre} - 'Cantidad:'{self.cantidad_clases} - 'Precio: $'{self.precio}" 

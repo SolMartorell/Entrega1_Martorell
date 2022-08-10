@@ -1,0 +1,18 @@
+{% extends 'gym/base.html' %}
+
+{% block titulo %} Agregar actividades {% endblock %}
+
+{% block welcome %} Agregar actividades {% endblock %}
+
+{% block contenido %}
+
+<p>Agregar una actividad:</p>  
+<form method="post">{% csrf_token %}
+
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Agregar">
+</form>
+
+
+{% endblock %}

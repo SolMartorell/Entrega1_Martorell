@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>G10 Crossfit - Entrena mejor</title>
+        <title> {% block titulo %} G10 Crossfit - Entrena mejor {% endblock %} </title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'gym/css/styles.css' %}" rel="stylesheet" />
@@ -33,7 +33,7 @@
         <!-- Header-->
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Bienvenido</h1>
+                <h1 class="fw-bolder"> {% block welcome %} Bienvenido {% endblock %}</h1>
                 <p class="lead">G10 Crossfit - Entrena mejor</p>
             </div>  
         </header>

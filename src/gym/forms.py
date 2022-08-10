@@ -8,3 +8,22 @@ class BusquedaSocios(Form):
 
 class BusquedaPlanes(Form):
     cantidad_clases_plan = IntegerField()
+
+
+
+class AgregarActividades(Form):
+    nombre = CharField(max_length=30)
+    dia = CharField(max_length=30)
+    horario = IntegerField()
+    cupo = IntegerField()
+
+class AgregarSocios(Form):
+    nombre = CharField(max_length=30)
+    apellido = CharField(max_length=30)
+    email = EmailField()
+    cuota_paga = BooleanField()
+
+class AgregarPlanes(Form):
+    nombre = CharField(max_length=30)
+    cantidad_clases = IntegerField()
+    precio = IntegerField()

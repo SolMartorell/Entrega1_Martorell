@@ -1,0 +1,20 @@
+{% extends 'gym/base.html' %}
+
+{% block titulo %} Agregar planes {% endblock %}
+
+{% block welcome %} Agregar planes {% endblock %}
+
+{% block contenido %}
+
+<p>Agregar un plan:</p>
+<br>
+<br>  
+<form method="post">{% csrf_token %}
+
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Agregar">
+</form>
+
+
+{% endblock %}

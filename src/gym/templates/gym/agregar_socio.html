@@ -1,0 +1,18 @@
+{% extends 'gym/base.html' %}
+
+{% block titulo %} Agregar socios {% endblock %}
+
+{% block welcome %} Agregar socios {% endblock %}
+
+{% block contenido %}
+
+<p>Agregar un socio:</p>
+<form method="post">{% csrf_token %}
+
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Agregar">
+</form>
+
+
+{% endblock %}
